@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MorseCodeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-03T13:32:08" hostname="thinkcentre" time="0.014">
+  <properties/>
+  <testcase name="test0()" classname="MorseCodeTest" time="0.012"/>
+  <testcase name="test1()" classname="MorseCodeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
