@@ -1,8 +1,9 @@
 /**
- * author : Sifiso Mhlongo
- * Description: A class that define two methods
- * 				one method converts text to morseCode
- * 				the other morseCode to text
+ * author 		: Sifiso Mhlongo
+ * Description	: A class that define two methods
+ * 				  one method converts text to morseCode
+ * 				  the other morseCode to text
+ * 
  * Class makes use of directional hashMap of guava framework from google
  * */
 
@@ -11,6 +12,10 @@ package com.umuzi.projects;
 import com.google.common.collect.BiMap; 
 import com.google.common.collect.HashBiMap;
 
+/**
+ * @author A237902
+ *
+ */
 public class MorseCode {
 
 	static BiMap<Character, String> morseCode = HashBiMap.create(); 
@@ -44,6 +49,8 @@ public class MorseCode {
 	        morseCode.put('Z', "--..");
 	        morseCode.put(' ', "/");
 	}
+	
+// this method converts a morseCode to letters using reverse functionality of bidirectional map
 	 StringBuilder morseCodeToLetters(String morseCodeString) {
 		
 		StringBuilder morseToken2 = new StringBuilder("");
@@ -61,6 +68,8 @@ public class MorseCode {
 		}
 		return letters;
 	}
+	 
+//this method reverses the above operation and uses the forward operation  of map
 	 StringBuilder lettersToMorseCode(String phrase) {
 		StringBuilder text = new StringBuilder();
 		for(int i = 0; i < phrase.length(); i++) {

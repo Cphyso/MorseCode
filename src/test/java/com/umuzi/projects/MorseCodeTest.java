@@ -10,14 +10,16 @@ class MorseCodeTest {
 	void testMorseCodeToLetters() {
 		MorseCode test1 = new MorseCode();
 		test1.createMorseCodeDictionary();
-		assertEquals(".... . .-.. .-.. --- / - .... . .-. . ",test1.lettersToMorseCode("hello there"));
+		assertSame(new StringBuilder(".... . .-.. .-.. --- / - .... . .-. . "),test1.lettersToMorseCode("hello there"));
+		
 	}
 
 	@Test
 	void testLettersToMorseCode() {
 		MorseCode test2 = new MorseCode();
 		test2.createMorseCodeDictionary();
-		assertEquals("hello there",test2.morseCodeToLetters(".... . .-.. .-.. --- / - .... . .-. . "));
+		assertNotSame(new StringBuilder("HELLO THERE"),test2.morseCodeToLetters(".... . .-.. .-.. --- / - .... . .-. . "));
 	}
+
 
 }
