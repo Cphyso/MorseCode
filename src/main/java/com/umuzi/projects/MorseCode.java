@@ -49,7 +49,6 @@ public class MorseCode {
 	        morseCode.put('Z', "--..");
 	        morseCode.put(' ', "/");
 	}
-	
 // this method converts a morseCode to letters using reverse functionality of bidirectional map
 	 StringBuilder morseCodeToLetters(String morseCodeString) {
 		
@@ -68,7 +67,6 @@ public class MorseCode {
 		}
 		return letters;
 	}
-	 
 //this method reverses the above operation and uses the forward operation  of map
 	 StringBuilder lettersToMorseCode(String phrase) {
 		StringBuilder text = new StringBuilder();
